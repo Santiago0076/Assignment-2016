@@ -8,6 +8,10 @@ def parseArguments(argvArray):
 
     argsAsWord = " ".join(argvArray[1:])
     return argsAsWord + "\n"
+<<<<<<< HEAD
+=======
+    
+>>>>>>> f1f42da8e1bbd969bdcf10b9cd67b01b196400ef
 
 
 def saveTask(taskString):
@@ -18,5 +22,9 @@ def saveTask(taskString):
     dbPath = os.path.join( os.getenv("HOME"), dbFilename )
     with open(dbPath, "a") as myfile:
         myfile.write(taskString)
+<<<<<<< HEAD
 
 parsedTask = parseArguments(sys.argv)
+=======
+ parsedTask = parseArguments(sys.argv)
+>>>>>>> f1f42da8e1bbd969bdcf10b9cd67b01b196400ef

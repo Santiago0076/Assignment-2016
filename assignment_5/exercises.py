@@ -16,22 +16,24 @@ def to_celsius(degrees_fahrenheit):
 
 to_fahrenheit(0)
 
-print(to_fahrenheit(0))
-print(to_fahrenheit(50))
-print(to_fahrenheit(75))
-print(to_fahrenheit(100))
-
-print(to_celsius(0))
-print(to_celsius(50))
-print(to_celsius(75))
-print(to_celsius(100))
-
 gravity = 9.8
 
 def get_fall_time(height):
     # gravity isn't going to change, units in m/(s^2)
 
+gravity = 9.8
 
+<<<<<<< HEAD
+def get_fall_time(height):
+    # gravity isn't going to change, units in m/(s^2)
+=======
+    time_elapsed = math.sqrt((2 * height) / gravity)
+>>>>>>> f1f42da8e1bbd969bdcf10b9cd67b01b196400ef
+
+    # replace with logic of above equation
+    return time_elapsed
+
+<<<<<<< HEAD
     time_elapsed = math.sqrt((2 * height) / gravity)
 
     # replace with logic of above equation
@@ -40,6 +42,11 @@ def get_fall_time(height):
 def height(height):
     height = (1/2) * gravity * time * time
 
+=======
+def height(height):
+    height = (1/2) * gravity * time * time
+
+>>>>>>> f1f42da8e1bbd969bdcf10b9cd67b01b196400ef
 def time(time):
     time = math.sqrt((2 * height) / gravity)
     return time
@@ -65,4 +72,8 @@ def isVulnerable(tower_height, tower_x, tower_y, target_x, target_y):
     else:
         print("The target is further than the tower range, what should we return?")
         return None
+<<<<<<< HEAD
     isVulnerable(10, 3, 2, 1, 1)   
+=======
+    isVulnerable(10, 3, 2, 1, 1)
+>>>>>>> f1f42da8e1bbd969bdcf10b9cd67b01b196400ef
